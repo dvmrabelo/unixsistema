@@ -1,0 +1,30 @@
+<div class="row">
+  <div class="col-md-4">
+<h1>Product registered</h1>
+<hr>
+<table>
+<p>
+  <strong>Produto:</strong>
+  <%= @product.name %>
+</p>
+
+<p>
+  <strong>Descrição:</strong>
+  <%= @product.description %>
+</p>
+
+<p>
+  <strong>Cor:</strong>
+  <%= @product.color.name %>
+</p>
+
+<p>
+  <strong>Size:</strong>
+  <%= @product.size.name %>
+</p>
+
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %>
+
+</div>
+</div>

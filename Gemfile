@@ -1,10 +1,18 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
-
+#Heroku
+gem 'rails_12factor', group: :production
+#Rspec
+gem 'rails-controller-testing'
+gem 'rspec-rails'
+#Bootstrap
+gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
+gem 'bootstrap_form'
+#gem 'bcrypt-ruby', '3.1.1.rc1', :require => 'bcrypt'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# Use mysql as the database for Active Record
+gem 'mysql2', '>= 0.3.18', '< 0.5'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
