@@ -18,7 +18,7 @@ describe ProductsController, type: :controller do
 
 		expect(response).to render_template(:new)
 
-		post :create, product: {name: "Camisa test", description: 'Testando camisa', color_id: 1, size_id: 1}
+		post :create, product: {description: 'Testando camisa', color_id: 1, size_id: 1}
 
 		expect(response).to render_template(:new)
 	end
